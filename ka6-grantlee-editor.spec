@@ -6,6 +6,7 @@
 %define		qtver		5.15.2
 %define		kaname		grantlee-editor
 Summary:	Grantlee Editor
+Summary(pl.UTF-8):	Edytor Grantlee
 Name:		ka6-%{kaname}
 Version:	26.04.1
 Release:	1
