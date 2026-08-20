@@ -1,20 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	26.04.3
+%define		kdeappsver	26.08.0
 %define		kframever	6.26.0
 %define		qtver		5.15.2
 %define		kaname		grantlee-editor
 Summary:	Grantlee Editor
 Summary(pl.UTF-8):	Edytor Grantlee
 Name:		ka6-%{kaname}
-Version:	26.04.3
-Release:	2
+Version:	26.08.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	53c10458dc48dbe865e829579672d477
-Patch0:		find_ki18n.patch
+# Source0-md5:	6f91c4d4d20e6709b8a8102a5de55033
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
@@ -65,7 +64,6 @@ Narzędzia do zarządzania motywami w aplikacjach KDE PIM.
 
 %prep
 %setup -q -n %{kaname}-%{version}
-%patch -P0 -p1
 
 %build
 %cmake \
